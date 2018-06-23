@@ -54,7 +54,7 @@ class PolyTreeNode
   def bfs(target_val)
     queue = []
     queue << self
-    while !queue.empty?
+    until queue.empty?
       node = queue.shift
       if node.value == target_val
         return node unless node.nil?
